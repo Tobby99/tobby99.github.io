@@ -1,0 +1,27 @@
+@font-face {
+  font-family: zhuanti;
+  src: url("/static/fonts/hanyi.woff2") format("woff2");
+}
+p.formula {
+  font-size: 24pt;
+  margin: 1em;
+}
+pre, p:not(.formula) {
+  font-family: 'Courier Prime', monospace;
+  font-size: 11pt;
+  font-weight: bold;
+}
+footer{
+  background-color: #bbbbbb;
+  <!-- padding: 10px; -->
+  <!-- margin: 10px; -->
+  align-items: center;
+  border: 1px;
+  text-align: left;
+}
+footer > pre.chinese {
+  font-family: zhuanti;
+  font-size: 36pt;
+  font-weight: normal;
+  margin: 0;
+}
