@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>My LaTeX Example</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet"/>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <style>
+    @font-face {
+      font-family: zhuanti;
+      src: url("static/fonts/hanyi.woff2") format("woff2");
+    }
+    p.formula {
+      font-size: 24pt;
+      margin: 1em;
+    }
+    pre, p:not(.formula) {
+      font-family: 'Courier Prime', monospace;
+      font-size: 11pt;
+      font-weight: bold;
+    }
+    footer{
+      background-color: #bbbbbb;
+      <!-- padding: 10px; -->
+      <!-- margin: 10px; -->
+      align-items: center;
+      border: 1px;
+      text-align: left;
+    }
+   footer > pre.chinese {
+      font-family: zhuanti;
+      font-size: 36pt;
+      font-weight: normal;
+      margin: 0;
+    }
+
+    </style>
+  </head>
+  <body>
+    <h1>LaTeX Example</h1>
+    <p>This is an example of how to use LaTeX in HTML.</p>
+    <p class="formula">\[ a x^2 + b x + c = 0 \]</p>
+    <p>The quadratic formula is:</p>
+    <p class="formula">\[x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}\]</p>
+    <br/>
+    <p class="formula" style="font-size:20pt">\[ \vec{P}\times\vec{Q} =\left| \vec{P}\times\vec{Q} \right |\hat{n} \]</p>
+    <p class="formula" style="font-size:20pt">\[ (P\cdot Q) \]</p>
+    <hr/>
+    <p>Electronic Fun Workshop &trade;</p>
+  </body>
+  <footer>
+  <p>Copyright &copy; 2023 Electronic Fun Workshop</p>
+    <p>
+      <pre>
+  "The only thing that never changes is that everything changes."
+  ― Louis L'Amour
+      </pre>
+    </p>
+    <pre class="chinese">
+电乐坊
+    </pre>
+  </footer>
+</html>
